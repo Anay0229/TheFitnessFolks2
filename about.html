@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Us - The Fitness Folks</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F28A18",
+                        "dark-navy": "#0A0A0F",
+                        "panel-dark": "#15151a",
+                    },
+                    fontFamily: {
+                        heading: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0F;
+            background-image: url('Icons/pattern.png');
+            /* Pattern preserved */
+            background-size: 300px;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="bg-dark-navy text-white font-body">
+
+    <header
+        class="fixed top-0 left-0 w-full z-50 bg-dark-navy/90 backdrop-blur-md border-b border-white/10 h-20 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="Icons/Logo.png" alt="Logo" class="w-10 h-10 object-contain">
+                <h2 class="text-xl font-heading font-bold uppercase">The Fitness Folks</h2>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-heading font-medium">
+                <a href="index.html" class="text-white/80 hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-primary border-b-2 border-primary">About Us</a>
+                <a href="services.html" class="text-white/80 hover:text-primary transition-colors">Our Services</a>
+                <a href="contact.html" class="text-white/80 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            <button id="menuBtn" class="md:hidden text-white"><span
+                    class="material-symbols-outlined text-3xl">menu</span></button>
+        </div>
+        <div id="mobileMenu"
+            class="md:hidden hidden bg-dark-navy border-t border-white/10 absolute w-full left-0 top-20 shadow-2xl p-4 flex flex-col gap-4">
+            <a href="index.html" class="text-white/80">Home</a>
+            <a href="about.html" class="text-primary font-bold">About Us</a>
+            <a href="services.html" class="text-white/80">Our Services</a>
+            <a href="contact.html" class="text-white/80">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <section class="py-20 text-center px-4 relative overflow-hidden">
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] pointer-events-none">
+            </div>
+            <div class="relative z-10">
+                <h1 class="text-5xl md:text-6xl font-heading font-bold mb-6">We're <span class="text-primary">The
+                        Fitness Folks</span></h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Empowering you with personalized fitness, expert guidance, and a supportive community — wherever you
+                    are in the world.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-panel-dark/30 border-y border-white/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <h2 class="text-4xl font-heading font-bold">Our Story</h2>
+                            <div class="h-1 flex-grow bg-white/10 rounded-full"></div>
+                        </div>
+                        <div class="bg-panel-dark p-8 rounded-2xl border border-white/5 shadow-xl relative">
+                            <span
+                                class="material-symbols-outlined absolute top-4 right-4 text-primary text-4xl opacity-20">fitness_center</span>
+                            <p class="text-gray-300 leading-relaxed text-lg">
+                                The Fitness Folks was born from a shared passion to make wellness inclusive, effective,
+                                and joyful. Founded by certified trainers with decades of experience, we blend
+                                science-backed training with compassion to help you thrive — whether you're a beginner,
+                                a mom-to-be, or an athlete.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="../fitnessfolks/Group Photo.jpg" alt="Our Story" class="w-full h-80 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div
+                        class="order-2 md:order-1 rounded-2xl overflow-hidden shadow-2xl border border-white/10 -rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1591311630200-ffa9120a540f?auto=format&fit=crop&q=80"
+                            alt="Mission" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="space-y-6 order-1 md:order-2">
+                        <div class="flex items-center gap-4">
+                            <h2 class="text-4xl font-heading font-bold">Our Mission</h2>
+                            <div class="h-1 flex-grow bg-white/10 rounded-full"></div>
+                        </div>
+                        <div class="bg-panel-dark p-8 rounded-2xl border border-white/5 shadow-xl relative">
+                            <span
+                                class="material-symbols-outlined absolute top-4 right-4 text-primary text-4xl opacity-20">spa</span>
+                            <p class="text-gray-300 leading-relaxed text-lg">
+                                We are dedicated to helping people reconnect with their bodies and discover the
+                                transformative power of mindful movement. Our approach combines modern fitness science
+                                with holistic wellness practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-panel-dark/50">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-heading font-bold">What Sets Us Apart</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div
+                        class="flex gap-4 p-6 bg-dark-navy rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            1</div>
+                        <div>
+                            <h4 class="text-xl font-bold font-heading mb-2">Personalized Plans</h4>
+                            <p class="text-gray-400">Custom fitness journeys crafted specifically for your body type and
+                                goals.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-4 p-6 bg-dark-navy rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            2</div>
+                        <div>
+                            <h4 class="text-xl font-bold font-heading mb-2">Hybrid Training</h4>
+                            <p class="text-gray-400">Train online from anywhere or in-person at your home — your choice.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-4 p-6 bg-dark-navy rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            3</div>
+                        <div>
+                            <h4 class="text-xl font-bold font-heading mb-2">Global Reach</h4>
+                            <p class="text-gray-400">Serving clients in India, UK, USA, Australia — across time zones.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-4 p-6 bg-dark-navy rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+                        <div
+                            class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            4</div>
+                        <div>
+                            <h4 class="text-xl font-bold font-heading mb-2">Community</h4>
+                            <p class="text-gray-400">Join a motivating, inclusive tribe that celebrates every milestone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CTA -->
+    <section class="py-16 bg-dark-navy text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold font-heading mb-6 text-white">Ready to Begin Your Journey?</h2>
+            <p class="text-lg text-white/70 mb-8 max-w-2xl mx-auto">Let's build a stronger, healthier you —
+                together.
+            </p>
+            <a href="contact.html"
+                class="inline-block bg-primary hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 text-lg">
+                Get Started Today
+            </a>
+        </div>
+    </section>
+    <footer class="bg-black/90 pt-16 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8">
+                            <img src="Icons/Logo.png" alt="Logo" class="w-full h-full object-contain">
+                        </div>
+                        <h2 class="text-xl font-heading font-bold uppercase">The Fitness Folks</h2>
+                    </div>
+                    <p class="text-gray-400 max-w-sm text-sm leading-relaxed">
+                        Your journey to a healthier, stronger you starts here. Personalized fitness for every body,
+                        mind, and spirit.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-primary font-bold uppercase tracking-wider mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-primary font-bold uppercase tracking-wider mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span
+                                class="material-symbols-outlined">thumb_up</span></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span
+                                class="material-symbols-outlined">photo_camera</span></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span
+                                class="material-symbols-outlined">mail</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-xs">
+                &copy; 2024 The Fitness Folks. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

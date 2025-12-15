@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Services - The Fitness Folks</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F28A18",
+                        "dark-navy": "#0A0A0F",
+                        "panel-dark": "#15151a",
+                    },
+                    fontFamily: {
+                        heading: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0F;
+            background-image: url('Icons/pattern.png');
+            background-size: 300px;
+            background-attachment: fixed;
+        }
+
+        /* Hide scrollbar for tab navigation */
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .active-tab {
+            border-bottom: 2px solid #F28A18;
+            color: #F28A18;
+        }
+
+        .active-service-item {
+            background-color: #F28A18;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-dark-navy text-white font-body">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-dark-navy/90 backdrop-blur-md border-b border-white/10 h-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="Icons/Logo.png" alt="Logo" class="w-10 h-10 object-contain">
+                <h2 class="text-xl font-heading font-bold uppercase">The Fitness Folks</h2>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-heading font-medium">
+                <a href="index.html" class="text-white/80 hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="text-white/80 hover:text-primary transition-colors">About Us</a>
+                <a href="services.html" class="text-primary border-b-2 border-primary">Our Services</a>
+                <a href="contact.html" class="text-white/80 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            <button id="menuBtn" class="md:hidden text-white"><span
+                    class="material-symbols-outlined text-3xl">menu</span></button>
+        </div>
+        <div id="mobileMenu"
+            class="md:hidden hidden bg-dark-navy border-t border-white/10 absolute w-full left-0 top-20 shadow-2xl p-4 flex flex-col gap-4">
+            <a href="index.html" class="text-white/80">Home</a>
+            <a href="about.html" class="text-white/80">About Us</a>
+            <a href="services.html" class="text-primary font-bold">Our Services</a>
+            <a href="contact.html" class="text-white/80">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-screen">
+
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4">Our Services</h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">Comprehensive wellness solutions tailored to your unique journey.
+            </p>
+        </div>
+
+        <div class="flex overflow-x-auto hide-scroll gap-8 border-b border-white/10 mb-8 pb-1">
+            <button
+                class="category-tab whitespace-nowrap pb-3 px-2 text-lg font-medium text-white/60 hover:text-white transition-colors active-tab"
+                data-category="fitness">Fitness Classes</button>
+            <button
+                class="category-tab whitespace-nowrap pb-3 px-2 text-lg font-medium text-white/60 hover:text-white transition-colors"
+                data-category="therapy">Therapy & Recovery</button>
+            <button
+                class="category-tab whitespace-nowrap pb-3 px-2 text-lg font-medium text-white/60 hover:text-white transition-colors"
+                data-category="personalized">Personalized Programs</button>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+
+            <div class="lg:w-1/3 w-full shrink-0">
+                <div class="bg-panel-dark border border-white/10 rounded-xl p-2 lg:p-4 overflow-x-auto lg:overflow-visible flex lg:flex-col gap-2 hide-scroll"
+                    id="service-nav-container">
+
+                    <div class="service-category-list flex lg:flex-col gap-2 w-full" id="fitness-list">
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 active-service-item whitespace-nowrap"
+                            data-service-id="strength">
+                            <span class="material-symbols-outlined">fitness_center</span> Strength Training
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="pilates">
+                            <span class="material-symbols-outlined">spa</span> Pilates
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="aerobics">
+                            <span class="material-symbols-outlined">monitor_heart</span> Aerobics
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="zumba">
+                            <span class="material-symbols-outlined">music_note</span> Zumba
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="yoga">
+                            <span class="material-symbols-outlined">self_improvement</span> Yoga
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="prenatal">
+                            <span class="material-symbols-outlined">pregnant_woman</span> Prenatal Yoga
+                        </button>
+                    </div>
+
+                    <div class="service-category-list hidden flex lg:flex-col gap-2 w-full" id="therapy-list">
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="physiotherapy">
+                            <span class="material-symbols-outlined">medical_services</span> Physiotherapy
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="yogatherapy">
+                            <span class="material-symbols-outlined">healing</span> Yoga Therapy
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="stretching">
+                            <span class="material-symbols-outlined">accessibility_new</span> Passive Stretching
+                        </button>
+                    </div>
+
+                    <div class="service-category-list hidden flex lg:flex-col gap-2 w-full" id="personalized-list">
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="weightloss">
+                            <span class="material-symbols-outlined">scale</span> Weight Loss
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="weightgain">
+                            <span class="material-symbols-outlined">add_circle</span> Weight Gain
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="sportstraining">
+                            <span class="material-symbols-outlined">sprint</span> Sports Training
+                        </button>
+                        <button
+                            class="service-nav-item flex items-center gap-3 px-4 py-3 rounded-lg text-left text-sm lg:text-base font-medium transition-colors hover:bg-white/5 whitespace-nowrap"
+                            data-service-id="nutritionist">
+                            <span class="material-symbols-outlined">restaurant</span> Nutritionist
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-2/3 w-full grow">
+                <div
+                    class="bg-panel-dark border border-white/10 rounded-xl p-6 md:p-8 min-h-[500px] shadow-2xl relative overflow-hidden">
+
+                    <div class="service-content" id="strength-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Strength">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Strength Training</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Build raw power and endurance with our scientifically
+                            backed strength programs.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-white/80"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Hypertrophy
+                                focused routines</li>
+                            <li class="flex items-center gap-3 text-white/80"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Injury prevention
+                                techniques</li>
+                            <li class="flex items-center gap-3 text-white/80"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Personal record
+                                tracking</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-content hidden" id="pilates-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Pilates">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Pilates</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Enhance core stability, posture, and flexibility through
+                            controlled movements.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-white/80"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Mat and Reformer
+                                options</li>
+                            <li class="flex items-center gap-3 text-white/80"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Core
+                                strengthening</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-content hidden" id="aerobics-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Aerobics">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Aerobics</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">High-energy rhythmic exercises designed to improve
+                            cardiovascular health and agility.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-white/80"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Cardiovascular
+                                endurance</li>
+                            <li class="flex items-center gap-3 text-white/80"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Step and Floor
+                                routines</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-content hidden" id="zumba-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1535525266638-c89318f17a35?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Zumba">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Zumba</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">High-energy dance fitness that burns calories while you
+                            have fun.</p>
+                    </div>
+
+                    <div class="service-content hidden" id="yoga-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1544367563-12123d8965cd?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Yoga">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Yoga</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Find inner peace and physical balance with Vinyasa, Hatha,
+                            and Ashtanga flows.</p>
+                    </div>
+
+                    <div class="service-content hidden" id="prenatal-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Prenatal Yoga">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Prenatal Yoga</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Safe and gentle yoga practices tailored for expectant
+                            mothers to reduce stress and improve flexibility.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-white/80"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Breathing
+                                techniques</li>
+                            <li class="flex items-center gap-3 text-white/80"><span
+                                    class="material-symbols-outlined text-primary">check_circle</span> Guided relaxation
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="service-content hidden" id="physiotherapy-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Physiotherapy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Physiotherapy</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Recover from injuries safely with our certified
+                            specialists.</p>
+                    </div>
+
+                    <div class="service-content hidden" id="yogatherapy-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Yoga Therapy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Yoga Therapy</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">A therapeutic application of yoga practices to address
+                            specific health conditions and physical limitations.</p>
+                    </div>
+
+                    <div class="service-content hidden" id="stretching-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Stretching">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Passive Stretching</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Increase range of motion and reduce muscle tension.</p>
+                    </div>
+
+                    <div class="service-content hidden" id="weightloss-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Weight Loss">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Weight-Loss Program
+                            </h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Holistic approach combining nutrition and exercise.</p>
+                    </div>
+
+                    <div class="service-content hidden" id="weightgain-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Weight Gain">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Weight-Gain Program
+                            </h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Structured programs focused on muscle hypertrophy and
+                            healthy caloric surplus strategies.</p>
+                    </div>
+
+                    <div class="service-content hidden" id="sportstraining-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Sports Training">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Sports Training
+                            </h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Specialized athletic conditioning to improve speed,
+                            agility, and sport-specific performance.</p>
+                    </div>
+
+                    <div class="service-content hidden" id="nutritionist-details">
+                        <div class="h-64 rounded-lg overflow-hidden mb-6 relative">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=1000"
+                                class="w-full h-full object-cover" alt="Nutritionist">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <h2 class="absolute bottom-4 left-4 text-3xl font-bold font-heading">Nutritionist</h2>
+                        </div>
+                        <p class="text-gray-300 text-lg mb-6">Expert meal planning and dietary advice.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // Toggle Mobile Menu
+        document.getElementById('menuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        // Tab System Logic
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const categoryLists = document.querySelectorAll('.service-category-list');
+        const navItems = document.querySelectorAll('.service-nav-item');
+        const contents = document.querySelectorAll('.service-content');
+
+        // 1. Category Switching
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Style Tabs
+                categoryTabs.forEach(t => t.classList.remove('active-tab'));
+                tab.classList.add('active-tab');
+
+                // Show relevant list
+                const cat = tab.dataset.category;
+                categoryLists.forEach(list => list.classList.add('hidden'));
+                document.getElementById(`${cat}-list`).classList.remove('hidden');
+
+                // Trigger click on first item of new list to update content
+                const firstItem = document.getElementById(`${cat}-list`).querySelector('.service-nav-item');
+                if (firstItem) firstItem.click();
+            });
+        });
+
+        // 2. Service Content Switching
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Style Nav Items
+                navItems.forEach(n => n.classList.remove('active-service-item'));
+                item.classList.add('active-service-item');
+
+                // Show relevant content
+                const id = item.dataset.serviceId;
+                contents.forEach(c => c.classList.add('hidden'));
+                const target = document.getElementById(`${id}-details`);
+                if (target) target.classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
