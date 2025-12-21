@@ -155,7 +155,7 @@
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <button
-                            class="bg-primary hover:bg-orange-600 text-white text-lg font-bold px-8 py-3 rounded-lg transition-transform hover:scale-105 shadow-lg">
+                            class="bg-primary hover:bg-orange-600 text-white text-lg font-bold px-8 py-3 rounded-lg transition-transform hover:scale-105 shadow-lg" onclick="window.location.href='./contact.html'">
                             Join Now
                         </button>
                     </div>
@@ -208,8 +208,7 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div
                             class="col-span-2 relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
-                            <img src="./fitnessfolks/Group photo 2.jpg"
-                                alt="Video Thumbnail"
+                            <img src="./fitnessfolks/Group photo 2.jpg" alt="Video Thumbnail"
                                 class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <!-- <button
@@ -271,7 +270,7 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-lg font-bold text-white">Disha Joshi</h3>
-                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Founder & Head Trainer
+                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2"> Trainer
                         </p>
                         <p class="text-xs text-gray-400 line-clamp-2">Specializes in strength training and injury
                             prevention.</p>
@@ -285,7 +284,7 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-lg font-bold text-white">Anshul Hardiya</h3>
-                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Yoga Specialist</p>
+                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Founder</p>
                         <p class="text-xs text-gray-400 line-clamp-2">Focuses on flexibility, mindfulness, and stress
                             relief.</p>
                     </div>
@@ -435,15 +434,12 @@
                     <div
                         class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video class="w-full h-full object-cover video-player" playsinline>
-                                <source src="./Assets/videos/gym v3.mp4" type="video/mp4">
-                            </video>
-
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
-                                <span
-                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
-                            </div>
+                            <iframe
+                                src="https://player.vimeo.com/video/1148490945?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                                referrerpolicy="strict-origin-when-cross-origin" title="gym v3">
+                            </iframe>
 
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
@@ -452,40 +448,18 @@
                                     <p class="text-primary text-sm">Graphic Designer</p>
                                 </div>
                             </div>
-
-                            <div
-                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
-                                <div
-                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
-                                    <div
-                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
-                                    </div>
-                                </div>
-
-                                <div class="flex justify-between items-center text-white mt-1">
-                                    <button class="small-play-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
-                                    </button>
-                                    <button class="mute-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-2xl">volume_off</span> </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
                     <div
                         class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video class="w-full h-full object-cover video-player" playsinline>
-                                <source src="./Assets/videos/Dr Arun.mp4" type="video/mp4">
-                            </video>
-
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
-                                <span
-                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
-                            </div>
-
+                            <iframe
+                                src="https://player.vimeo.com/video/1148490477?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                                referrerpolicy="strict-origin-when-cross-origin" title="gym v3">
+                            </iframe>
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
                                 <div class="p-6 mb-12">
@@ -494,38 +468,21 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
-                                <div
-                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
-                                    <div
-                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
-                                    </div>
-                                </div>
-                                <div class="flex justify-between items-center text-white mt-1">
-                                    <button class="small-play-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
-                                    </button>
-                                    <button class="mute-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-2xl">volume_off</span>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
                     <div
                         class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video class="w-full h-full object-cover video-player" playsinline>
-                                <source src="./Assets/videos/Mr Tapan.mov" type="video/mp4">
-                            </video>
 
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
-                                <span
-                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
-                            </div>
+                            <iframe
+                                src="https://player.vimeo.com/video/1148491095?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                                referrerpolicy="strict-origin-when-cross-origin" title="gym v3">
+                            </iframe>
+
+
 
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
@@ -535,39 +492,19 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
-                                <div
-                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
-                                    <div
-                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
-                                    </div>
-                                </div>
-                                <div class="flex justify-between items-center text-white mt-1">
-                                    <button class="small-play-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
-                                    </button>
-                                    <button class="mute-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-2xl">volume_off</span>
-                                    </button>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 
                     <div
                         class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video class="w-full h-full object-cover video-player" playsinline>
-                                <source src="./Assets/videos/advika final.mp4" type="video/mp4">
-                            </video>
-
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
-                                <span
-                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
-                            </div>
-
+                            <iframe
+                                src="https://player.vimeo.com/video/1148490340?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                                referrerpolicy="strict-origin-when-cross-origin" title="gym v3">
+                            </iframe>
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
                                 <div class="p-6 mb-12">
@@ -575,39 +512,20 @@
                                     <p class="text-primary text-sm">Student</p>
                                 </div>
                             </div>
-
-                            <div
-                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
-                                <div
-                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
-                                    <div
-                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
-                                    </div>
-                                </div>
-                                <div class="flex justify-between items-center text-white mt-1">
-                                    <button class="small-play-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
-                                    </button>
-                                    <button class="mute-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-2xl">volume_off</span>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
                     <div
                         class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video class="w-full h-full object-cover video-player" playsinline>
-                                <source src="./Assets/videos/ff yoga.mp4" type="video/mp4">
-                            </video>
+                            <iframe
+                                src="https://player.vimeo.com/video/1148490776?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                                referrerpolicy="strict-origin-when-cross-origin" title="gym v3">
+                            </iframe>
 
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
-                                <span
-                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
-                            </div>
+
 
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
@@ -617,26 +535,51 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
-                                <div
-                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
-                                    <div
-                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
-                                    </div>
-                                </div>
-                                <div class="flex justify-between items-center text-white mt-1">
-                                    <button class="small-play-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
-                                    </button>
-                                    <button class="mute-btn hover:text-primary transition-colors">
-                                        <span class="material-symbols-outlined text-2xl">volume_off</span>
-                                    </button>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
+                    <div
+                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
+                        <div class="aspect-[9/16] relative">
+                            <iframe
+                                src="https://player.vimeo.com/video/1148491022?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                                referrerpolicy="strict-origin-when-cross-origin" title="gym v3">
+                            </iframe>
 
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
+                                <div class="p-6 mb-12">
+                                    <h3 class="text-lg font-bold text-white">Migrane Relief</h3>
+                                        <p class="text-primary text-sm">Tips</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div
+                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
+                        <div class="aspect-[9/16] relative">
+                            <iframe
+                                src="https://player.vimeo.com/video/1148490592?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                class="absolute inset-0 w-full h-full" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                                referrerpolicy="strict-origin-when-cross-origin" title="gym v3">
+                            </iframe>
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
+                                <div class="p-6 mb-12">
+                                    <h3 class="text-lg font-bold text-white">Try These</h3>
+                                        <p class="text-primary text-sm">Streching</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -716,81 +659,84 @@
 
         // --- Video Player Logic ---
         document.querySelectorAll('.video-card').forEach(card => {
-            const video = card.querySelector('.video-player');
+            const iframe = card.querySelector('.vimeo-player');
+            const player = new Vimeo.Player(iframe);
+
             const centerPlayBtn = card.querySelector('.center-play-btn');
-            const centerIcon = centerPlayBtn.querySelector('span');
-            const controls = card.querySelector('.video-controls');
-            const smallPlayBtn = card.querySelector('.small-play-btn');
-            const smallPlayIcon = smallPlayBtn.querySelector('span');
-            const muteBtn = card.querySelector('.mute-btn');
-            const muteIcon = muteBtn.querySelector('span');
-            const progressBarContainer = card.querySelector('.progress-bar-container');
-            const progressBarFill = card.querySelector('.progress-bar-fill');
             const infoOverlay = card.querySelector('.info-overlay');
+            const smallPlayBtn = card.querySelector('.small-play-btn');
+            const smallPlayIcon = smallPlayBtn?.querySelector('span');
+            const muteBtn = card.querySelector('.mute-btn');
+            const muteIcon = muteBtn?.querySelector('span');
+            const progressFill = card.querySelector('.progress-bar-fill');
+            const progressContainer = card.querySelector('.progress-bar-container');
 
-            // Default state: Muted
-            video.muted = true;
-
-            // 1. Play/Pause Functionality
-            function togglePlay() {
-                if (video.paused) {
-                    video.play();
+            /* ---------- PLAY / PAUSE ---------- */
+            async function togglePlay() {
+                const paused = await player.getPaused();
+                if (paused) {
+                    await pauseAllOtherVideos(player);
+                    player.play();
                     centerPlayBtn.style.opacity = '0';
-                    centerPlayBtn.style.pointerEvents = 'none'; // Allow clicks to pass through to controls
-                    infoOverlay.style.opacity = '0'; // Hide text when playing
+                    infoOverlay.style.opacity = '0';
                     smallPlayIcon.textContent = 'pause';
                 } else {
-                    video.pause();
+                    player.pause();
                     centerPlayBtn.style.opacity = '1';
-                    centerPlayBtn.style.pointerEvents = 'auto';
                     infoOverlay.style.opacity = '1';
                     smallPlayIcon.textContent = 'play_arrow';
                 }
             }
 
             centerPlayBtn.addEventListener('click', togglePlay);
-            smallPlayBtn.addEventListener('click', (e) => {
-                e.stopPropagation(); // Prevent bubbling if needed
+            smallPlayBtn.addEventListener('click', e => {
+                e.stopPropagation();
                 togglePlay();
             });
 
-            // Pause when video ends
-            video.addEventListener('ended', () => {
+            /* ---------- MUTE / UNMUTE ---------- */
+            muteBtn.addEventListener('click', async e => {
+                e.stopPropagation();
+                const muted = await player.getMuted();
+                await player.setMuted(!muted);
+                muteIcon.textContent = muted ? 'volume_up' : 'volume_off';
+            });
+
+            /* ---------- PROGRESS BAR ---------- */
+            player.on('timeupdate', data => {
+                const percent = (data.seconds / data.duration) * 100;
+                progressFill.style.width = `${percent}%`;
+            });
+
+            progressContainer.addEventListener('click', async e => {
+                e.stopPropagation();
+                const rect = progressContainer.getBoundingClientRect();
+                const pos = (e.clientX - rect.left) / rect.width;
+                const duration = await player.getDuration();
+                player.setCurrentTime(pos * duration);
+            });
+
+            /* ---------- RESET ON END ---------- */
+            player.on('ended', () => {
                 centerPlayBtn.style.opacity = '1';
-                centerPlayBtn.style.pointerEvents = 'auto';
                 infoOverlay.style.opacity = '1';
                 smallPlayIcon.textContent = 'play_arrow';
-                progressBarFill.style.width = '0%';
-            });
-
-            // 2. Mute/Unmute Functionality
-            muteBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                video.muted = !video.muted;
-                if (video.muted) {
-                    muteIcon.textContent = 'volume_off';
-                } else {
-                    muteIcon.textContent = 'volume_up';
-                }
-            });
-
-            // 3. Progress Bar Functionality
-            video.addEventListener('timeupdate', () => {
-                if (video.duration) {
-                    const percent = (video.currentTime / video.duration) * 100;
-                    progressBarFill.style.width = `${percent}%`;
-                }
-            });
-
-            // Seek functionality
-            progressBarContainer.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const rect = progressBarContainer.getBoundingClientRect();
-                const pos = (e.clientX - rect.left) / rect.width;
-                video.currentTime = pos * video.duration;
+                progressFill.style.width = '0%';
             });
         });
+
+        /* ---------- Pause all other videos ---------- */
+        async function pauseAllOtherVideos(currentPlayer) {
+            document.querySelectorAll('.vimeo-player').forEach(async iframe => {
+                const p = new Vimeo.Player(iframe);
+                if (p !== currentPlayer) {
+                    await p.pause();
+                }
+            });
+        }
     </script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
 </body>
 
 </html>
