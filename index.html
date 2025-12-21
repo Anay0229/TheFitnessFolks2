@@ -79,16 +79,9 @@
             }
         }
 
-        .delay-100 {
-            animation-delay: 100ms;
-        }
-
-        .delay-200 {
-            animation-delay: 200ms;
-        }
-
-        .delay-300 {
-            animation-delay: 300ms;
+        /* Progress Bar Hover Effect */
+        .group:hover .progress-handle {
+            opacity: 1;
         }
     </style>
 </head>
@@ -149,9 +142,7 @@
         <section
             class="relative w-full min-h-[85vh] flex items-center bg-dark-navy bg-cover bg-center bg-no-repeat bg-fixed"
             style="background-image: url('./fitnessfolks/Group\ photo.jpg');">
-
             <div class="absolute inset-0 bg-gradient-to-r from-dark-navy via-dark-navy/80 to-transparent"></div>
-
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div class="max-w-2xl fade-in-up">
                     <h1
@@ -167,7 +158,6 @@
                             class="bg-primary hover:bg-orange-600 text-white text-lg font-bold px-8 py-3 rounded-lg transition-transform hover:scale-105 shadow-lg">
                             Join Now
                         </button>
-                        
                     </div>
                 </div>
             </div>
@@ -215,22 +205,21 @@
         <section class="py-20 bg-dark-navy/50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
                     <div class="grid grid-cols-2 gap-4">
                         <div
                             class="col-span-2 relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5yE3VV0EfCEKNVJI25mgJV3nfxU95aEJJ_rPqbj1zVSYJy_z0mqmfuMOgULcGZB502Mb2lWMZ34Rm9NAApcD2bx8voI3_RbtHk3t-r6hx4E2bwKsCeTorDgWMuIh31XrR6rvIYZysVTJPQ0Sa4yW4fiv-LPPc1iWLrVfQEa2RujzeKf1yfMYtrBdbNrix9-5tImeoUwTANurnScpYHBKDEG3OE_iJggp35QnjX2gTumABzu9rTCq0RXDl6b-tcBRx8zrPFywq14_D"
+                            <img src="./fitnessfolks/Group photo 2.jpg"
                                 alt="Video Thumbnail"
                                 class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
                             <div class="absolute inset-0 flex items-center justify-center">
-                                <button
+                                <!-- <button
                                     class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                                     <span class="material-symbols-outlined text-4xl">play_arrow</span>
-                                </button>
+                                </button> -->
                             </div>
                         </div>
-                        <div class="relative aspect-video rounded-2xl overflow-hidden shadow-lg border border-white/10">
-                            <img src="fitnessfolks/Group photo 2.jpg"
+                        <div class="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-white/10">
+                            <img src="./fitnessfolks/Bulk.CR2"
                                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
                         </div>
                         <div
@@ -239,20 +228,15 @@
                             <p class="text-sm text-gray-400">Years of Experience</p>
                         </div>
                     </div>
-
                     <div
                         class="bg-dark-navy/80 backdrop-blur-sm p-8 md:p-12 rounded-3xl border border-white/5 shadow-xl">
                         <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-white uppercase tracking-wide">
                             About Us</h2>
-                        <p class="text-gray-300 mb-6 leading-relaxed">
-                            We are dedicated to transforming lives through personalized fitness programs. Our expert
-                            trainers bring years of experience to help you achieve your wellness goals.
-                        </p>
-                        <p class="text-gray-300 mb-8 leading-relaxed">
-                            With state-of-the-art facilities and innovative training methods, we provide a holistic
-                            approach to health and fitness that goes beyond just lifting weights.
-                        </p>
-
+                        <p class="text-gray-300 mb-6 leading-relaxed">We are dedicated to transforming lives through
+                            personalized fitness programs. Our expert trainers bring years of experience to help you
+                            achieve your wellness goals.</p>
+                        <p class="text-gray-300 mb-8 leading-relaxed">With state-of-the-art facilities and innovative
+                            training methods, we provide a holistic approach to health and fitness.</p>
                         <div class="space-y-4 mb-8">
                             <div class="flex items-center gap-3">
                                 <span class="material-symbols-outlined text-primary">check_circle</span>
@@ -263,13 +247,10 @@
                                 <span class="text-white">Industry Certified Trainers</span>
                             </div>
                         </div>
-
                         <button
-                            class="bg-transparent border border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300">
-                            Learn More
-                        </button>
+                            class="bg-transparent border border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300">Learn
+                            More</button>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -352,8 +333,7 @@
                         class="group bg-dark-navy/60 backdrop-blur-sm border border-white/5 rounded-xl p-6 text-center hover:border-primary/50 transition-all duration-300 hover:-translate-y-1">
                         <div
                             class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-2 border-primary/20 group-hover:border-primary transition-colors">
-                            <img src="./fitnessfolks/Anshul Tiwari.jpg" alt="Anshul"
-                                class="w-full h-full object-cover">
+                            <img src="./fitnessfolks/Anshul Tiwari.jpg" alt="Anshul" class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-lg font-bold text-white">Anshul Tiwari</h3>
                         <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Rehab Specialist</p>
@@ -393,8 +373,10 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-lg font-bold text-white">Krishna Mourya</h3>
-                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Functional Training Specialist</p>
-                        <p class="text-xs text-gray-400 line-clamp-2">Expert in functional fitness and athletic performance.</p>
+                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Functional Training
+                            Specialist</p>
+                        <p class="text-xs text-gray-400 line-clamp-2">Expert in functional fitness and athletic
+                            performance.</p>
                     </div>
 
                     <div
@@ -405,8 +387,10 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-lg font-bold text-white">Samarth Hardiya</h3>
-                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Strength & Conditioning Coach</p>
-                        <p class="text-xs text-gray-400 line-clamp-2">Specializes in building muscle and athletic conditioning.</p>
+                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Strength & Conditioning
+                            Coach</p>
+                        <p class="text-xs text-gray-400 line-clamp-2">Specializes in building muscle and athletic
+                            conditioning.</p>
                     </div>
 
                     <div
@@ -417,8 +401,10 @@
                                 class="w-full h-full object-cover">
                         </div>
                         <h3 class="text-lg font-bold text-white">Vidushi Kothari</h3>
-                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Dance Fitness Instructor</p>
-                        <p class="text-xs text-gray-400 line-clamp-2">Makes fitness fun with energetic dance-based workouts.</p>
+                        <p class="text-primary text-xs uppercase font-bold tracking-wider mb-2">Dance Fitness Instructor
+                        </p>
+                        <p class="text-xs text-gray-400 line-clamp-2">Makes fitness fun with energetic dance-based
+                            workouts.</p>
                     </div>
 
                 </div>
@@ -427,14 +413,11 @@
 
         <section class="py-20 bg-dark-navy/80">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-end mb-12">
-                    <div>
-                        <h2 class="text-3xl md:text-5xl font-heading font-bold text-white uppercase">Community Stories
-                        </h2>
-                        <p class="text-gray-400 mt-2">See how we are changing lives.</p>
-                    </div>
+                <div class="flex flex-col items-center justify-center text-center mb-12">
+                    <h2 class="text-3xl md:text-5xl font-heading font-bold text-white uppercase">Community Stories</h2>
+                    <p class="text-gray-400 mt-2 max-w-2xl mx-auto">See how we are changing lives.</p>
 
-                    <div class="flex gap-2">
+                    <div class="flex gap-4 mt-6">
                         <button onclick="scrollTestimonials(-1)"
                             class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary hover:border-primary transition-colors text-white">
                             <span class="material-symbols-outlined">chevron_left</span>
@@ -450,96 +433,206 @@
                     class="flex gap-6 overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory scroll-smooth">
 
                     <div
-                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative">
+                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video poster="" class="w-full h-full object-cover" loop muted playsinline>
+                            <video class="w-full h-full object-cover video-player" playsinline>
                                 <source src="Assets/videos/gym v3.mp4" type="video/mp4">
                             </video>
+
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                <h3 class="text-lg font-bold text-white">Dr. Sumita Agarwal</h3>
-                                <p class="text-primary text-sm">Graphic Designer</p>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors">
+                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
                                 <span
-                                    class="material-symbols-outlined text-5xl text-white opacity-80 group-hover:scale-110 transition-transform">play_circle</span>
+                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
+                            </div>
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
+                                <div class="p-6 mb-12">
+                                    <h3 class="text-lg font-bold text-white">Dr. Sumita Agarwal</h3>
+                                    <p class="text-primary text-sm">Graphic Designer</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
+                                <div
+                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
+                                    <div
+                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-between items-center text-white mt-1">
+                                    <button class="small-play-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
+                                    </button>
+                                    <button class="mute-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-2xl">volume_off</span> </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div
-                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative">
+                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video poster="" class="w-full h-full object-cover" loop muted playsinline>
+                            <video class="w-full h-full object-cover video-player" playsinline>
                                 <source src="Assets/videos/Dr Arun.mp4" type="video/mp4">
                             </video>
+
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                <h3 class="text-lg font-bold text-white">Dr. Arun Agarwal</h3>
-                                <p class="text-primary text-sm">Cancer Specialist</p>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors">
+                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
                                 <span
-                                    class="material-symbols-outlined text-5xl text-white opacity-80 group-hover:scale-110 transition-transform">play_circle</span>
+                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
+                            </div>
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
+                                <div class="p-6 mb-12">
+                                    <h3 class="text-lg font-bold text-white">Dr. Arun Agarwal</h3>
+                                    <p class="text-primary text-sm">Cancer Specialist</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
+                                <div
+                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
+                                    <div
+                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center text-white mt-1">
+                                    <button class="small-play-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
+                                    </button>
+                                    <button class="mute-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-2xl">volume_off</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div
-                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative">
+                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video poster="" class="w-full h-full object-cover" loop muted playsinline>
+                            <video class="w-full h-full object-cover video-player" playsinline>
                                 <source src="Assets/videos/Mr Tapan.mov" type="video/mp4">
                             </video>
+
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                <h3 class="text-lg font-bold text-white">Mr. Tapan Agarwal</h3>
-                                <p class="text-primary text-sm">Emerald Developers, CEO</p>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors">
+                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
                                 <span
-                                    class="material-symbols-outlined text-5xl text-white opacity-80 group-hover:scale-110 transition-transform">play_circle</span>
+                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
+                            </div>
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
+                                <div class="p-6 mb-12">
+                                    <h3 class="text-lg font-bold text-white">Mr. Tapan Agarwal</h3>
+                                    <p class="text-primary text-sm">Emerald Developers, CEO</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
+                                <div
+                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
+                                    <div
+                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center text-white mt-1">
+                                    <button class="small-play-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
+                                    </button>
+                                    <button class="mute-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-2xl">volume_off</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div
-                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative">
+                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video poster="" class="w-full h-full object-cover" loop muted playsinline>
+                            <video class="w-full h-full object-cover video-player" playsinline>
                                 <source src="Assets/videos/advika final.mp4" type="video/mp4">
                             </video>
+
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                <h3 class="text-lg font-bold text-white">Advika</h3>
-                                <p class="text-primary text-sm">Student</p>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors">
+                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
                                 <span
-                                    class="material-symbols-outlined text-5xl text-white opacity-80 group-hover:scale-110 transition-transform">play_circle</span>
+                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
+                            </div>
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
+                                <div class="p-6 mb-12">
+                                    <h3 class="text-lg font-bold text-white">Advika</h3>
+                                    <p class="text-primary text-sm">Student</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
+                                <div
+                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
+                                    <div
+                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center text-white mt-1">
+                                    <button class="small-play-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
+                                    </button>
+                                    <button class="mute-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-2xl">volume_off</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div
-                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative">
+                        class="snap-center shrink-0 w-[280px] sm:w-[320px] bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10 group relative video-card">
                         <div class="aspect-[9/16] relative">
-                            <video poster="" class="w-full h-full object-cover" loop muted playsinline>
+                            <video class="w-full h-full object-cover video-player" playsinline>
                                 <source src="Assets/videos/ff yoga.mp4" type="video/mp4">
                             </video>
+
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
-                                <h3 class="text-lg font-bold text-white">Scorpion Pose</h3>
-                                <p class="text-primary text-sm">Advanced Yoga</p>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors">
+                                class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-transparent transition-colors center-play-btn cursor-pointer">
                                 <span
-                                    class="material-symbols-outlined text-5xl text-white opacity-80 group-hover:scale-110 transition-transform">play_circle</span>
+                                    class="material-symbols-outlined text-6xl text-white opacity-90 hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
+                            </div>
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end pointer-events-none transition-opacity duration-300 info-overlay">
+                                <div class="p-6 mb-12">
+                                    <h3 class="text-lg font-bold text-white">Scorpion Pose</h3>
+                                    <p class="text-primary text-sm">Advanced Yoga</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-2 z-20 video-controls">
+                                <div
+                                    class="w-full bg-white/30 h-1.5 rounded-full cursor-pointer progress-bar-container relative">
+                                    <div
+                                        class="bg-primary h-full w-0 rounded-full pointer-events-none progress-bar-fill absolute top-0 left-0">
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center text-white mt-1">
+                                    <button class="small-play-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-3xl">play_arrow</span>
+                                    </button>
+                                    <button class="mute-btn hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined text-2xl">volume_off</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -587,7 +680,7 @@
                 </div>
             </div>
             <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-xs">
-                &copy; 2024 The Fitness Folks. All Rights Reserved.
+                © 2024 The Fitness Folks. All Rights Reserved.
             </div>
         </div>
     </footer>
@@ -621,14 +714,80 @@
             });
         }
 
-        // --- Video Hover Play (Optional enhancement) ---
-        const videos = document.querySelectorAll('video');
-        videos.forEach(video => {
-            video.parentElement.addEventListener('mouseenter', () => {
-                video.play().catch(() => { }); // Autoplay might be blocked by browser
+        // --- Video Player Logic ---
+        document.querySelectorAll('.video-card').forEach(card => {
+            const video = card.querySelector('.video-player');
+            const centerPlayBtn = card.querySelector('.center-play-btn');
+            const centerIcon = centerPlayBtn.querySelector('span');
+            const controls = card.querySelector('.video-controls');
+            const smallPlayBtn = card.querySelector('.small-play-btn');
+            const smallPlayIcon = smallPlayBtn.querySelector('span');
+            const muteBtn = card.querySelector('.mute-btn');
+            const muteIcon = muteBtn.querySelector('span');
+            const progressBarContainer = card.querySelector('.progress-bar-container');
+            const progressBarFill = card.querySelector('.progress-bar-fill');
+            const infoOverlay = card.querySelector('.info-overlay');
+
+            // Default state: Muted
+            video.muted = true;
+
+            // 1. Play/Pause Functionality
+            function togglePlay() {
+                if (video.paused) {
+                    video.play();
+                    centerPlayBtn.style.opacity = '0';
+                    centerPlayBtn.style.pointerEvents = 'none'; // Allow clicks to pass through to controls
+                    infoOverlay.style.opacity = '0'; // Hide text when playing
+                    smallPlayIcon.textContent = 'pause';
+                } else {
+                    video.pause();
+                    centerPlayBtn.style.opacity = '1';
+                    centerPlayBtn.style.pointerEvents = 'auto';
+                    infoOverlay.style.opacity = '1';
+                    smallPlayIcon.textContent = 'play_arrow';
+                }
+            }
+
+            centerPlayBtn.addEventListener('click', togglePlay);
+            smallPlayBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent bubbling if needed
+                togglePlay();
             });
-            video.parentElement.addEventListener('mouseleave', () => {
-                video.pause();
+
+            // Pause when video ends
+            video.addEventListener('ended', () => {
+                centerPlayBtn.style.opacity = '1';
+                centerPlayBtn.style.pointerEvents = 'auto';
+                infoOverlay.style.opacity = '1';
+                smallPlayIcon.textContent = 'play_arrow';
+                progressBarFill.style.width = '0%';
+            });
+
+            // 2. Mute/Unmute Functionality
+            muteBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                video.muted = !video.muted;
+                if (video.muted) {
+                    muteIcon.textContent = 'volume_off';
+                } else {
+                    muteIcon.textContent = 'volume_up';
+                }
+            });
+
+            // 3. Progress Bar Functionality
+            video.addEventListener('timeupdate', () => {
+                if (video.duration) {
+                    const percent = (video.currentTime / video.duration) * 100;
+                    progressBarFill.style.width = `${percent}%`;
+                }
+            });
+
+            // Seek functionality
+            progressBarContainer.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const rect = progressBarContainer.getBoundingClientRect();
+                const pos = (e.clientX - rect.left) / rect.width;
+                video.currentTime = pos * video.duration;
             });
         });
     </script>
