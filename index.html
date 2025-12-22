@@ -55,6 +55,24 @@
             animation: floatBackground 22s ease-in-out infinite;
         }
 
+        /* Hero background (desktop + mobile adjustments) */
+        .hero-bg {
+            background-image: url('./fitnessfolks/Group photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        @media (max-width: 640px) {
+            .hero-bg {
+                background-size: cover;
+                background-position: center top;
+                background-attachment: scroll;
+                min-height: 60vh;
+            }
+        }
+
         /* --- Scrollbar Hiding --- */
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
@@ -141,8 +159,7 @@
 
     <main class="pt-20">
         <section
-            class="relative w-full min-h-[85vh] flex items-center bg-dark-navy bg-cover bg-center bg-no-repeat bg-fixed"
-            style="background-image: url('./fitnessfolks/Group\ photo.jpg');">
+            class="relative w-full min-h-[85vh] flex items-center bg-dark-navy bg-cover bg-center bg-no-repeat hero-bg">
             <div class="absolute inset-0 bg-gradient-to-r from-dark-navy via-dark-navy/80 to-transparent"></div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div class="max-w-2xl fade-in-up">
